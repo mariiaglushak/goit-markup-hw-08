@@ -13,16 +13,21 @@
 </head>
 <body>
     <header class="header-section">
-        <div class="container">
+        <div class="container mobile-box">
             <nav class="nav">
                 <a href="./index.html" class="logo"><span class="part-of-logo">Web</span>Studio</a>
-                <ul class="nav__list">
+                <ul class="nav__list mobile-box_navigation">
                     <li class="nav__items"><a href="./index.html" class="nav__link">Студия</a></li>
                     <li class="nav__items"><a href="./portfolio.html" class="nav__link illumination">Портфолио</a></li>
                     <li class="nav__items"><a href="Контакты" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts">
+            <button type="button" class="mobile-box_open-btn" data-menu-open>
+                <svg class="mobile-box_open-icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <ul class="contacts mobile-box_navigation">
                 <li class="contacts__items "><a href="mailto:info@devstudio.com" class="contacts__item">
                     <svg class="contacts__icon" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
@@ -34,6 +39,32 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu_container">
+                <button type="button" class="mobile-menu_close-button" data-menu-close>
+                    <svg class="mobile-menu_close-icon" width="19" height="19">
+                        <use href="./images/icons.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu_list">
+                    <li class="mobile-menu_items"><a href="./index.html" class="mobile-menu_link illumination">Студия</a></li>
+                    <li class="mobile-menu_items"><a href="./portfolio.html" class="mobile-menu_link">Портфолио</a></li>
+                    <li class="mobile-menu_items"><a href="" class="mobile-menu_link">Контакты</a></li>
+                </ul>
+                <ul class="mobile-menu_contacts-list">
+                    <li class="mobile-menu_items"><a href="tel:+380961111111" class="mobile-menu_phone-link">+38 096 111 11
+                            11</a></li>
+                    <li class="mobile-menu_items"><a href="mailto:info@devstudio.com"
+                            class="mobile-menu_mail-link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-menu_social-list">
+                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Instagram</a></li>
+                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Twitter</a></li>
+                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Facebook</a></li>
+                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -51,7 +82,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/our-people.jpg" alt="Відкритий ноутбук, на екрані зображені фото працівників" width="370">
+                                <picture>
+                                    <source srcset="./images/our-people.webp 1x, ./images/our-people-2x.webp 2x"
+                                        media="(min-width:1200px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/our-people.jpg 1x, ./images/our-people-2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-our-people.webp 1x, ./images/tablet-our-people-2x.webp 2x"
+                                        media="(min-width:768px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-our-people.jpg 1x, ./images/tablet-our-people-2x.jpg 2x"
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-our-people.webp 1x, ./images/mobile-our-people-2x.webp 2x"
+                                        media="(max-width:767px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-our-people.jpg 1x, ./images/mobile-our-people-2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <img src="./images/our-people.jpg" alt="Відкритий ноутбук, на екрані зображені фото працівників" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -66,7 +119,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/ball.jpg" alt="Зображено двох волейболістів у стрибку з м'ячем у руках" width="370">
+                                <picture>
+                                    <source srcset="./images/ball.webp 1x, ./images/ball-2x.webp 2x" 
+                                        media="(min-width:1200px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/ball.jpg 1x, ./images/ball-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-ball.webp 1x, ./images/tablet-ball-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-ball.jpg 1x, ./images/tablet-ball-2x.jpg 2x"
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-ball.webp 1x, ./images/mobile-ball-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-ball.jpg 1x, ./images/mobile-ball-2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <img src="./images/ball.jpg" alt="Зображено двох волейболістів у стрибку з м'ячем у руках" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -82,7 +157,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370">
+                                <picture>
+                                    <source srcset="./images/seafood.webp 1x, ./images/seafood-2x.webp 2x" 
+                                        media="(min-width:1200px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/seafood.jpg 1x, ./images/seafood-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-seafood.webp 1x, ./images/tablet-seafood-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-seafood.jpg 1x, ./images/tablet-seafood-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-seafood.webp 1x, ./images/mobile-seafood-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-seafood.jpg 1x, ./images/mobile-seafood-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -98,7 +195,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/headphone.jpg" alt="Накладні навушники" width="370">
+                                <picture>
+                                    <source srcset="./images/headphone.webp 1x, ./images/headphone-2x.webp 2x" 
+                                        media="(min-width:1200px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/headphone.jpg 1x, ./images/headphone-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-headphone.webp 1x, ./images/tablet-headphone-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-headphone.jpg 1x, ./images/tablet-headphone-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-headphone.webp 1x, ./images/mobile-headphone-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-headphone.jpg 1x, ./images/mobile-headphone-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/headphone.jpg" alt="Накладні навушники" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -114,7 +233,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/2-box.jpg" alt="Дві коробки з логотипами" width="370">
+                                <picture>
+                                    <source srcset="./images/2-box.webp 1x, ./images/2-box-2x.webp 2x" 
+                                        media="(min-width:1200px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/2-box.jpg 1x, ./images/2-box-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-2-box.webp 1x, ./images/tablet-2-box-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-2-box.jpg 1x, ./images/tablet-2-box-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-2-box.webp 1x, ./images/mobile-2-box-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-2-box.jpg 1x, ./images/mobile-2-box-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/2-box.jpg" alt="Дві коробки з логотипами" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -130,7 +271,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/screen.jpg" alt="Ком'ютер з відкритим вебсайтом" width="370">
+                                <picture>
+                                    <source srcset="./images/screen.webp 1x, ./images/screen-2x.webp 2x" 
+                                        media="(min-width:1200px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/screen.jpg 1x, ./images/screen-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-screen.webp 1x, ./images/tablet-screen-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-screen.jpg 1x, ./images/tablet-screen-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-screen.webp 1x, ./images/mobile-screen-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-screen.jpg 1x, ./images/mobile-screen-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/screen.jpg" alt="Ком'ютер з відкритим вебсайтом" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -146,7 +309,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/book.jpg" alt="Відкрита книжка в ній стаття" width="370">
+                                <picture>
+                                    <source srcset="./images/book.webp 1x, ./images/book-2x.webp 2x" 
+                                        media="(min-width:1200px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/book.jpg 1x, ./images/book-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-book.webp 1x, ./images/tablet-book-2x.webp 2x"
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-book.jpg 1x, ./images/tablet-book-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-book.webp 1x, ./images/mobile-book-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-book.jpg 1x, ./images/mobile-book-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/book.jpg" alt="Відкрита книжка в ній стаття" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -162,7 +347,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/label.jpg" alt="Логотип" width="370">
+                                <picture>
+                                    <source srcset="./images/label.webp 1x, ./images/label-2x.webp 2x" 
+                                        media="(min-width:1200px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/label.jpg 1x, ./images/label-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-label.webp 1x, ./images/tablet-label-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-label.jpg 1x, ./images/tablet-label-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-label.webp 1x, ./images/mobile-label-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-label.jpg 1x, ./images/mobile-label-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/label.jpg" alt="Логотип" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -178,7 +385,29 @@
                     <li class="portfolio-card">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-box">
-                                <img src="./images/leptop.jpg" alt="Ввімкнений ноутбук з відкритим додатком" width="370">
+                                <picture>
+                                    <source srcset="./images/leptop.webp 1x, ./images/leptop-2x.webp 2x" 
+                                        media="(min-width:1200px)" 
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/leptop.jpg 1x, ./images/leptop-2x.jpg 2x" 
+                                        media="(min-width:1200px)" />
+                                
+                                    <source srcset="./images/tablet-leptop.webp 1x, ./images/tablet-leptop-2x.webp 2x" 
+                                        media="(min-width:768px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/tablet-leptop.jpg 1x, ./images/tablet-leptop-2x.jpg 2x" 
+                                        media="(min-width:768px)" />
+                                
+                                    <source srcset="./images/mobile-leptop.webp 1x, ./images/mobile-leptop-2x.webp 2x" 
+                                        media="(max-width:767px)"
+                                        type="images/webp" />
+                                
+                                    <source srcset="./images/mobile-leptop.jpg 1x, ./images/mobile-leptop-2x.jpg 2x" 
+                                        media="(max-width:767px)" />
+                                    <img src="./images/leptop.jpg" alt="Ввімкнений ноутбук з відкритим додатком" width="370">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
@@ -260,6 +489,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
