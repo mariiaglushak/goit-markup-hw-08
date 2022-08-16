@@ -16,18 +16,18 @@
         <div class="container mobile-box">
             <nav class="nav">
                 <a href="./index.html" class="logo"><span class="part-of-logo">Web</span>Studio</a>
-                <ul class="nav__list mobile-box_navigation">
+                <ul class="nav__list mobile-box__navigation">
                     <li class="nav__items"><a href="./index.html" class="nav__link">Студия</a></li>
                     <li class="nav__items"><a href="./portfolio.html" class="nav__link illumination">Портфолио</a></li>
                     <li class="nav__items"><a href="Контакты" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mobile-box_open-btn" data-menu-open>
-                <svg class="mobile-box_open-icon" width="24" height="16">
+            <button type="button" class="mobile-box__open-btn" data-menu-open>
+                <svg class="mobile-box__open-icon" width="24" height="16">
                     <use href="./images/icons.svg#icon-menu_24px"></use>
                 </svg>
             </button>
-            <ul class="contacts mobile-box_navigation">
+            <ul class="contacts mobile-box__navigation">
                 <li class="contacts__items "><a href="mailto:info@devstudio.com" class="contacts__item">
                     <svg class="contacts__icon" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
@@ -40,29 +40,30 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu" data-menu>
-            <div class="mobile-menu_container">
-                <button type="button" class="mobile-menu_close-button" data-menu-close>
-                    <svg class="mobile-menu_close-icon" width="19" height="19">
+        <div class="mobile-menu " data-menu>
+            <div class="mobile-menu__container">
+                <button type="button" class="mobile-menu__close-button" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="19" height="19">
                         <use href="./images/icons.svg#icon-Vector-1"></use>
                     </svg>
                 </button>
-                <ul class="mobile-menu_list">
-                    <li class="mobile-menu_items"><a href="./index.html" class="mobile-menu_link illumination">Студия</a></li>
-                    <li class="mobile-menu_items"><a href="./portfolio.html" class="mobile-menu_link">Портфолио</a></li>
-                    <li class="mobile-menu_items"><a href="" class="mobile-menu_link">Контакты</a></li>
-                </ul>
-                <ul class="mobile-menu_contacts-list">
-                    <li class="mobile-menu_items"><a href="tel:+380961111111" class="mobile-menu_phone-link">+38 096 111 11
-                            11</a></li>
-                    <li class="mobile-menu_items"><a href="mailto:info@devstudio.com"
-                            class="mobile-menu_mail-link">info@devstudio.com</a></li>
-                </ul>
-                <ul class="mobile-menu_social-list">
-                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Instagram</a></li>
-                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Twitter</a></li>
-                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">Facebook</a></li>
-                    <li class="mobile-menu_social-items"><a href="" class="mobile-menu_social-link">LinkedIn</a></li>
+                <div class="mobile-menu__box">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__items"><a href="./index.html" class="mobile-menu__link">Студия</a></li>
+                        <li class="mobile-menu__items"><a href="./portfolio.html" class="mobile-menu__link hover-link">Портфолио</a></li>
+                        <li class="mobile-menu__items"><a href="" class="mobile-menu__link">Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-menu__contacts-list">
+                        <li class="mobile-menu__items"><a href="tel:+380961111111" class="mobile-menu__phone-link">+38 096 111 11
+                                11</a></li>
+                        <li class="mobile-menu__items"><a href="mailto:info@devstudio.com" class="mobile-menu__mail-link">info@devstudio.com</a></li>
+                    </ul>
+                </div>
+                <ul class="mobisle-menu__social-list">
+                    <li class="mobile-menu__social-items"><a href="" class="mobile-menu__social-link">Instagram</a></li>
+                    <li class="mobile-menu__social-items"><a href="" class="mobile-menu__social-link">Twitter</a></li>
+                    <li class="mobile-menu__social-items"><a href="" class="mobile-menu__social-link">Facebook</a></li>
+                    <li class="mobile-menu__social-items"><a href="" class="mobile-menu__social-link">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -103,7 +104,7 @@
                                 
                                     <source srcset="./images/mobile-our-people.jpg 1x, ./images/mobile-our-people-2x.jpg 2x"
                                         media="(max-width:767px)" />
-                                    <img src="./images/our-people.jpg" alt="Відкритий ноутбук, на екрані зображені фото працівників" width="370">
+                                    <img src="./images/our-people.jpg" alt="Відкритий ноутбук, на екрані зображені фото працівників" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -140,7 +141,7 @@
                                 
                                     <source srcset="./images/mobile-ball.jpg 1x, ./images/mobile-ball-2x.jpg 2x"
                                         media="(max-width:767px)" />
-                                    <img src="./images/ball.jpg" alt="Зображено двох волейболістів у стрибку з м'ячем у руках" width="370">
+                                    <img src="./images/ball.jpg" alt="Зображено двох волейболістів у стрибку з м'ячем у руках" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -178,7 +179,7 @@
                                 
                                     <source srcset="./images/mobile-seafood.jpg 1x, ./images/mobile-seafood-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370">
+                                    <img src="./images/seafood.jpg" alt="Логотип ресторану" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -216,7 +217,7 @@
                                 
                                     <source srcset="./images/mobile-headphone.jpg 1x, ./images/mobile-headphone-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/headphone.jpg" alt="Накладні навушники" width="370">
+                                    <img src="./images/headphone.jpg" alt="Накладні навушники" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -254,7 +255,7 @@
                                 
                                     <source srcset="./images/mobile-2-box.jpg 1x, ./images/mobile-2-box-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/2-box.jpg" alt="Дві коробки з логотипами" width="370">
+                                    <img src="./images/2-box.jpg" alt="Дві коробки з логотипами" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -292,7 +293,7 @@
                                 
                                     <source srcset="./images/mobile-screen.jpg 1x, ./images/mobile-screen-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/screen.jpg" alt="Ком'ютер з відкритим вебсайтом" width="370">
+                                    <img src="./images/screen.jpg" alt="Ком'ютер з відкритим вебсайтом" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -330,7 +331,7 @@
                                 
                                     <source srcset="./images/mobile-book.jpg 1x, ./images/mobile-book-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/book.jpg" alt="Відкрита книжка в ній стаття" width="370">
+                                    <img src="./images/book.jpg" alt="Відкрита книжка в ній стаття" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -368,7 +369,7 @@
                                 
                                     <source srcset="./images/mobile-label.jpg 1x, ./images/mobile-label-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/label.jpg" alt="Логотип" width="370">
+                                    <img src="./images/label.jpg" alt="Логотип" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -406,7 +407,7 @@
                                 
                                     <source srcset="./images/mobile-leptop.jpg 1x, ./images/mobile-leptop-2x.jpg 2x" 
                                         media="(max-width:767px)" />
-                                    <img src="./images/leptop.jpg" alt="Ввімкнений ноутбук з відкритим додатком" width="370">
+                                    <img src="./images/leptop.jpg" alt="Ввімкнений ноутбук з відкритим додатком" class="portfolio-img">
                                 </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-screen-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -475,7 +476,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__wrapper">
+            <div class="footer__form-box">
                 <p class="footer__title">Подпишитесь на рассылку</p>
                 <form class="form">
                     <label for="input-field" class="visually-hidden"></label>

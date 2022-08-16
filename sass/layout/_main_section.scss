@@ -1,10 +1,18 @@
+.main__section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    
+    background-color: #2F303A;
+}
+.main-button_hero{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .main__title {
-    max-width: 693px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -17,7 +25,7 @@
         display: flex;
         max-width: 480px;
         max-height: 400px;
-        padding: 118px 60px;
+        padding: 118px 0;
         background-image: linear-gradient(to right, rgba(46, 48, 58, 0.41), rgba(47, 47, 58, 0.4)),
             url('../images/hero-mobile.jpg');
 
@@ -29,20 +37,12 @@
                 url('../images/hero-mobile2x.jpg');
         }
     }
-    .main__title{
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.06em;
-        
-    }
 }
+@media screen and (min-width:768px){
 
-@media screen and (max-width: 1199px) {
-    .main__section {
+     .main__section {
         max-width: 768px;
-        padding: 118px 204px;
+        padding: 160px 0 118px 0;
         background-image: linear-gradient(to right, rgba(46, 48, 58, 0.41), rgba(47, 47, 58, 0.4)),
             url('../images/hero-tablet.jpg');
 
@@ -54,11 +54,15 @@
                 url('../images/hero-tablet2x.jpg');
         }
     }
+}
+
+@media screen and (max-width: 1199px) {
+   
         .main__title {
+            max-width: 360px;
             font-weight: 900;
             font-size: 26px;
             line-height: 1.62;
-            text-align: center;
             letter-spacing: 0.06em;
     
         }
@@ -81,23 +85,15 @@
                 url('../images/hero-desctop2x.jpg');
         }
     }
-    .main-title{
+    .main__title{
+        max-width: 693px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
        
 
     }
 }
-.main__section {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
-   
-    // padding: 200px 0;
-   
-    background-color: #2F303A;
-    // content: "";
-    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desctop.jpg);
-    background-size: cover;
-}
+
 
